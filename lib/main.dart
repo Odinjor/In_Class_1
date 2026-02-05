@@ -127,8 +127,15 @@ Center( child: ElevatedButton( onPressed: () {
   ),
 
     ];
+    final List<Color> tabColors = [
+  Colors.purple,
+  Colors.blue,
+  Colors.green,
+  Colors.orange,
+];
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: tabColors[_tabController.index],
         automaticallyImplyLeading: false,
         title: Text(
           'Tabs Demo',
